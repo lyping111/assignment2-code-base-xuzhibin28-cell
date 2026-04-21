@@ -33,10 +33,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label>password:</label>
                     <input type="password" name="password">
                 </div>
-                <div class="form-group">
-                    <label>Confirm password:</label>
-                    <input type="password" name="confirm_password"> 
-                </div>
                 <a href="login.php">Login page</a><br>
                  <button type="submit" name="register">register</button>
             </form>      
