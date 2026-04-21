@@ -35,6 +35,12 @@ CREATE TABLE `ok` (
   `CBM` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 COMMIT;
-INSERT INTO `ok`(` TrackingNumber`, `ProductName`, `ReceivingDate`, `Weight`, `CBM`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]')
-UPDATE `ok` SET ` TrackingNumber`='[value-1]',`ProductName`='[value-2]',`ReceivingDate`='[value-3]',`Weight`='[value-4]',`CBM`='[value-5]' WHERE 1
-DELETE FROM `ok` WHERE 0
+INSERT INTO `ok`(` TrackingNumber`, `ProductName`, `ReceivingDate`, `Weight`, `CBM`) VALUES ('abc','2321','2026/01/02','32','32')
+UPDATE `ok` SET ` TrackingNumber`='23123',`ProductName`='asda',`ReceivingDate`='2026/02/04',`Weight`='22',`CBM`='2' WHERE id=2
+DELETE FROM `ok` WHERE id =3
+
+ALTER TABLE `ok`
+  ADD `test` varchar(30)
+
+ALTER TABLE `ok`
+  DROP `test`
